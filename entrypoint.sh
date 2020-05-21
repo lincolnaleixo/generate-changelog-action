@@ -2,7 +2,7 @@
 
 git clone --quiet https://github.com/$REPO &> /dev/null
 
-changelog=$(generate-changelog $* --file -)
+changelog=$(generate-changelog $* --file $FILE)
 
 echo $changelog
 
